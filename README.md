@@ -1,4 +1,1 @@
-# paper
-
-Play around with paper.js
-====
+# Play around with paper.js
