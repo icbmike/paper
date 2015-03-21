@@ -1,10 +1,8 @@
-
-
 module.exports = function(){
 	return {
 		scope: {},
 		controller: function(){
-			
+
 		},
 		controllerAs: 'networkCntrl',
 		bindToController: true,

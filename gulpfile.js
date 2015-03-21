@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
 	browserify = require('gulp-browserify'),
+	stringify = require('stringify'),
 	rename = require('gulp-rename'),
 	path = require('path');
 
@@ -16,7 +17,12 @@ var paths = {
 
 gulp.task('js', function(){
 	gulp.src(path.join(paths.jsSrcFolder, paths.appEntryFile))
-	.pipe(browserify())
+	.pipe(browserify({
+		transform: stringify({
+			extensions: ['.html'], 
+			minify: true
+		})
+	}))
 	.pipe(rename(paths.appBuildFile))
 	.pipe(gulp.dest(path.join(paths.distFolder)))
 });

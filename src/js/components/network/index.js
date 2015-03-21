@@ -1,4 +1,4 @@
 
 var app = require('angular').module('paperApp');
 
-app.directive('networkDirective', require('./network-directive'));
+app.directive('network', require('./network-directive'));
