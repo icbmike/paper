@@ -1,0 +1,27 @@
+{
+  "name": "paper-terrain",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/icbmike/paper.git"
+  },
+  "author": "Mike Little",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icbmike/paper/issues"
+  },
+  "homepage": "https://github.com/icbmike/paper",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "browserify-shim": "^3.8.3",
+    "gulp": "^3.8.11"
+  },
+  "dependencies": {
+    "angular": "^1.3.15"
+  }
+}
